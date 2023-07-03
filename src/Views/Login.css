@@ -1,0 +1,21 @@
+.page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: small;
+    padding: 6px;
+    width: 350px;
+}
+.pass{
+    width: 366px;
+    align-self: center;
+}
