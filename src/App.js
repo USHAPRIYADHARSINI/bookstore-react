@@ -3,10 +3,8 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Redirect,
   Navigate,
 } from "react-router-dom";
-import PrivateRoute from "./utils/PrivateRoute";
 import AuthContext, { AuthProvider } from "./context/AuthContext";
 import Dashboard from "./Views/Dashboard";
 import Homepage from "./Views/Homepage";
@@ -34,7 +32,6 @@ function App() {
         <CartProvider>
           <Navbar />
           <Routes>
-            {/* <PrivateRoute element={<Dashboard/>} path="/dashboard" /> */}
             <>
               <Route element={<Homepage />} path="/" />
               <Route element={<Loginpage />} path="/login" />
