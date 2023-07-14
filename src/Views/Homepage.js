@@ -16,7 +16,9 @@ function Homepage() {
         <div className="tag"><button className="home-item" onClick={() => navigate("/login")}>
           Login
         </button>
-        <p className="home-hint">Already registered user?</p></div>
+        <p className="home-hint">Already registered user?</p>
+        <p className="home-hint">Use default login</p>
+        </div>
         <div className="tag"><button className="home-item" onClick={() => navigate("/register")}>
           Register
         </button>
