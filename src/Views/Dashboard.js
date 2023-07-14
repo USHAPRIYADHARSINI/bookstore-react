@@ -60,7 +60,7 @@ function Dashboard() {
         <img src={book.image} className="img" />
         <div className="cont">
           <div className="title">{book.title}</div>
-          <div className="price">{book.price}</div>
+          <div className="price">₹{book.price.split("$")[1]}</div>
           <div className="sub">{book.subtitle}</div>
           <div className="home-hint">{book.url}</div>
           <button onClick={(e) => addToCart(e, book)}>Add to cart</button>

@@ -15,6 +15,8 @@ import MyCart from "./Views/MyCart";
 import { CartProvider } from "./context/CartContext";
 import { useContext } from "react";
 import jwtDecode from "jwt-decode";
+import Success from "./Views/Payment/Success";
+import Cancel from "./Views/Payment/Cancel";
 
 function App() {
   let token = localStorage.getItem("Authorization");
@@ -38,6 +40,8 @@ function App() {
               <Route element={<Registerpage />} path="/register" />
               <Route element={<MyCart />} path="/mycart" />
               <Route element={<Dashboard />} path="/dashboard" />
+              <Route element={<Success />} path="/success" />
+              <Route element={<Cancel />} path="/cancel" />
               <Route
                 exact
                 path="/"
